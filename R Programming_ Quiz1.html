@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://gist.github.com/kfeoktistoff/437988fedff2b41b159f -->
+<html class="  "><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# githubog: http://ogp.me/ns/fb/githubog#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>R Programming: Quiz1</title>
+
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="unySn//a3HGmxlH5tcAk0kJMVhv7fAvQsOTfZzgSS8KewMn0pxhtRjtCXD2MAh/dJkWmiV1Weewpo4UDon6cJQ==" name="csrf-token">
+  <meta name="viewport" content="width=960">
+
+
+    <link type="text/plain" rel="author" href="https://github.com/humans.txt">
+    <meta content="gist" name="octolytics-app-id"><meta content="collector.githubapp.com" name="octolytics-host"><meta content="collector-cdn.github.com" name="octolytics-script-host"><meta content="6274C9A7:02CD:12133EF2:554F8461" name="octolytics-dimension-request_id"><meta content="11915401" name="octolytics-actor-id"><meta content="nancydemir" name="octolytics-actor-login"><meta content="48572df81a51a1d91339cac3245c1962647a1675cd55d2f835623588a76a5a0d" name="octolytics-actor-hash">
+  <link rel="assets" href="https://gist-assets.github.com/">
+  <link rel="zeroclipboard-assets" href="https://gist-assets.github.com/assets/zeroclipboard/dist/ZeroClipboard-aeb54c213f0d09883fed5a0947132da9.swf">
+  <link rel="editor-assets" href="https://gist-assets.github.com/assets/editor-cac2d04c8f22b5ffe38f6bc97dc54f54.js">
+  <link rel="mount-point" href="https://gist.github.com/">
+
+
+  <link href="https://gist-assets.github.com/assets/application-0622f4c051642df21ab90d3eb66a52b8.css" media="screen, print" rel="stylesheet">
+  <script async="" src="./R Programming_ Quiz1_files/analytics.js"></script><script src="./R Programming_ Quiz1_files/application-9441728a90e54c65c8d4079bfabcbff5.js"></script>
+
+      <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@github">
+  <meta property="og:title" content="kfeoktistoff/rprog-quiz1.txt">
+  <meta property="og:type" content="githubog:gist">
+  <meta property="og:url" content="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f">
+  <meta property="og:image" content="https://avatars2.githubusercontent.com/u/1745472?s=140">
+  <meta property="og:site_name" content="GitHub Gists">
+  <meta property="og:description" content="R Programming: Quiz1 - Gist is a simple way to share snippets of text and code with others.">
+  <meta name="description" content="R Programming: Quiz1 - Gist is a simple way to share snippets of text and code with others.">
+
+
+<script src="./R Programming_ Quiz1_files/api.js"></script></head>
+
+<body class="logged_in " data-plan="">
+
+  <div id="wrapper">
+    
+
+    <div id="header" class="header header-logged-in">
+      <div class="container clearfix">
+        <a class="header-logo-wordmark" href="https://gist.github.com/">
+          <span class="octicon octicon-logo-github"></span>
+          <span class="octicon-logo octicon-logo-gist"></span>
+        </a>
+
+        <div class="divider-vertical"></div>
+        <div class="topsearch">
+  <form id="top_search_form" action="https://gist.github.com/search" data-pjax-remote="push" accept-charset="UTF-8">
+    <div class="search">
+      <input type="text" class="search js-search js-navigation-enable js-quick-search" name="q" placeholder="Search…" data-hotkey="/" autocomplete="off" autocorrect="off" value="">
+
+      <div class="search-results js-search-results js-navigation-container"></div>
+    </div>
+    <div class="divider-vertical"></div>
+  </form>
+  <ul class="top-nav">
+    <li class="explore"><a href="https://gist.github.com/discover">All Gists</a></li>
+
+  </ul>
+</div>
+
+        <ul id="user-links">
+  <li>
+  <a href="https://gist.github.com/nancydemir" class="name">
+    <img src="./R Programming_ Quiz1_files/11915401" width="20" height="20"> nancydemir
+  </a>
+  </li>
+  <li>
+  <a href="https://gist.github.com/" id="new_gist" class="tooltipped tooltipped-s" aria-label="New Gist">
+    <span class="octicon octicon-gist-new"></span>
+  </a>
+  </li>
+  <li>
+  <a href="https://github.com/" class="tooltipped tooltipped-s" aria-label="Go to GitHub" data-skip-pjax="">
+    <span class="octicon octicon-octoface"></span>
+  </a>
+  </li>
+  <li>
+  <form action="https://gist.github.com/logout" method="post">
+    <input name="authenticity_token" type="hidden" value="PGDrnFRsOv+g1fsq3/R6iWyCxfd2nErrWtt3O2u4DgwY3LD3DK6LyD1R9u7mNkGGCIs1ZdC2ONfDnC1f8dTZ6w==">
+    <button class="logout-button tooltipped tooltipped-s" id="logout" type="submit" aria-label="Sign out">
+      <span class="octicon octicon-log-out"></span>
+    </button>
+  </form>
+  </li>
+</ul>
+
+      </div>
+    </div>
+
+    <div class="site-content" id="js-pjax-container" data-pjax-container="">
+      <div id="js-flash-container" class="site-container js-site-container" data-url="/kfeoktistoff/437988fedff2b41b159f">
+  
+  
+
+<meta content="true" name="octolytics-dimension-public"><meta content="12282604" name="octolytics-dimension-gist_id"><meta content="437988fedff2b41b159f" name="octolytics-dimension-gist_name"><meta content="false" name="octolytics-dimension-anonymous"><meta content="1745472" name="octolytics-dimension-owner_id"><meta content="kfeoktistoff" name="octolytics-dimension-owner_login"><meta content="false" name="octolytics-dimension-forked">
+
+<div class="pagehead repohead">
+  <div class="container">
+    <div class="title-actions-bar">
+      <ul class="pagehead-actions">
+            <li>
+              <div class="gist-advanced-options select-menu js-menu-container js-select-menu">
+
+                <span class="minibutton select-menu-button js-menu-target">
+                  <span class="octicon octicon-gear"></span>
+                </span>
+
+                <div class="select-menu-modal-holder js-menu-content js-navigation-container js-select-menu-pane">
+                  <div class="select-menu-modal">
+                    <div class="select-menu-header">
+                      <span class="select-menu-title">Advanced options</span>
+                      <span class="octicon octicon-x js-menu-close"></span>
+                    </div> <!-- /.select-menu-header -->
+
+                    <div class="select-menu-list">
+
+                      <div class="select-menu-item js-navigation-item">
+                        <div class="select-menu-item-text js-navigation-open">
+                          <a href="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f/report" data-method="post" data-skip-pjax="">Report as abuse</a>
+                        </div>
+                      </div> <!-- /.select-menu-item -->
+
+                    </div> <!-- /.select-menu-list -->
+
+                  </div> <!-- /.select-menu-modal -->
+                </div> <!-- /.select-menu-modal-holder -->
+              </div> <!-- /.select-menu -->
+            </li>
+          <li>
+              <form action="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f/star" data-pjax-remote="replace" method="post" accept-charset="UTF-8">
+                <input name="authenticity_token" type="hidden" value="KYZCbOf6iY/AfvUYbx9HGIsoEzFESR2ojOuneNyujMYNOhkHvzg4uF36+NxW3XwX7yHjo+Jjb5QVrP0cRsJbIQ==">
+                <button class="minibutton with-count" type="submit"><span class="octicon octicon-star"></span>Star</button>
+                  <span class="social-count">0</span>
+              </form>
+          </li>
+          <li>
+            <form action="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f/fork" data-method="post" method="post" accept-charset="UTF-8">
+              <button class="minibutton with-count fork-button" type="submit"><span class="octicon octicon-repo-forked"></span>Fork</button>
+              <a class="social-count js-social-count" href="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f/forks">11</a>
+            </form>
+          </li>
+
+      </ul>
+      <h1 itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title ">
+  <div class="meta">
+    <div class="gist-author">
+      <img src="./R Programming_ Quiz1_files/1745472" width="26" height="26">
+        <span class="author vcard">
+            <span itemprop="title"><a href="https://gist.github.com/kfeoktistoff">kfeoktistoff</a></span>
+        </span> /
+      <strong><a href="./R Programming_ Quiz1_files/R Programming_ Quiz1.html" class="js-current-repository">rprog-quiz1.txt</a></strong>
+    </div>
+    <div class="gist-timestamp">
+        <span class="datetime">Last active <time datetime="2014-06-18T20:11:26Z" is="relative-time" title="Jun 18, 2014, 4:11 PM EDT">on Jun 18, 2014</time></span>
+    </div>
+</div></h1>
+
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="gist js-gist-container gist-with-sidebar with-full-navigation" data-version="d6b32fa2e50d22bb26d693a344552f8c3aff6e3e" data-created="false" data-updated="false">
+
+      <div class="gist-sidebar clearfix">
+  <div class="sunken-menu vertical-right repo-nav js-repo-nav js-repository-container-pjax js-octicon-loaders">
+    <div class="sunken-menu-contents">
+      <ul class="sunken-menu-group">
+        <li class="tooltipped tooltipped-w" aria-label="Code">
+          <a aria-label="Code" class="sunken-menu-item selected" data-pjax="true" href="./R Programming_ Quiz1_files/R Programming_ Quiz1.html">
+            <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+            <img alt="" class="mini-loader" height="16" src="./R Programming_ Quiz1_files/octocat-spinner-32-ad13d0fd1814c3fda3b5018da94432ea.gif" width="16">
+</a>        </li>
+
+          <li class="tooltipped tooltipped-w" aria-label="Revisions">
+            <a aria-label="Revisions" class="sunken-menu-item" data-pjax="true" href="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f/revisions">
+              <span class="octicon octicon-git-commit"></span> <span class="full-word">Revisions</span>
+              <img alt="" class="mini-loader" height="16" src="./R Programming_ Quiz1_files/octocat-spinner-32-ad13d0fd1814c3fda3b5018da94432ea.gif" width="16">
+              <span class="counter">3</span>
+</a>          </li>
+
+
+          <li class="tooltipped tooltipped-w" aria-label="Forks">
+            <a aria-label="Forks" class="sunken-menu-item" data-pjax="true" href="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f/forks">
+              <span class="octicon octicon-git-branch"></span> <span class="full-word">Forks</span>
+              <img alt="" class="mini-loader" height="16" src="./R Programming_ Quiz1_files/octocat-spinner-32-ad13d0fd1814c3fda3b5018da94432ea.gif" width="16">
+              <span class="counter">11</span>
+</a>          </li>
+      </ul>
+    </div><!-- /.sunken-menu-group -->
+  </div><!-- /.sunken-menu-contents -->
+
+  <div class="only-with-full-nav">
+
+    <div class="embed-url open" style="display: block;">
+      <h3><strong>Embed</strong> URL</h3>
+      <div class="clone-url-box">
+        <input type="text" class="clone js-url-field" value="&lt;script src=&quot;https://gist.github.com/kfeoktistoff/437988fedff2b41b159f.js&quot;&gt;&lt;/script&gt;" readonly="readonly">
+        <span class="url-box-clippy">
+          <button aria-label="copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="&lt;script src=&quot;https://gist.github.com/kfeoktistoff/437988fedff2b41b159f.js&quot;&gt;&lt;/script&gt;" data-copied-hint="copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+        </span>
+      </div>
+    </div>
+    <p class="clone-options"></p>
+
+      
+<div class="clone-url open" data-protocol-type="http" data-url="https://gist.github.com/437988fedff2b41b159f.git">
+  <h3><strong>HTTPS</strong> clone URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone url-field js-url-field" value="https://gist.github.com/437988fedff2b41b159f.git" readonly="readonly">
+    <span class="url-box-clippy">
+      <button aria-label="copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="https://gist.github.com/437988fedff2b41b159f.git" data-copied-hint="copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url " data-protocol-type="ssh" data-url="git@gist.github.com:/437988fedff2b41b159f.git">
+  <h3><strong>SSH</strong> clone URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone url-field js-url-field" value="git@gist.github.com:/437988fedff2b41b159f.git" readonly="readonly">
+    <span class="url-box-clippy">
+      <button aria-label="copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="git@gist.github.com:/437988fedff2b41b159f.git" data-copied-hint="copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+<p class="clone-options">You can clone with
+      <a href="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f#" class="js-clone-selector" data-skip-pjax="" data-protocol="http">HTTPS</a>
+      or <a href="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f#" class="js-clone-selector" data-skip-pjax="" data-protocol="ssh">SSH</a>.
+</p>
+
+
+    <a aria-label="Download rprog-quiz1.txt as a zip file" class="minibutton sidebar-button" href="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f/download" rel="nofollow" title="Download rprog-quiz1.txt as a zip file">
+      <span class="octicon octicon-cloud-download"></span>
+      Download Gist
+</a>  </div><!-- /.only-with-full-nav -->
+
+</div>
+
+
+    <div class="gist-content">
+          <div class="gist-meta">
+            <div class="gist-description">
+              <p></p><div>R Programming: Quiz1</div><p></p>
+            </div>
+          </div>
+
+      <div class="files">
+            <div id="file-rprog-quiz1-txt" class="file ">
+    <a href="./R Programming_ Quiz1_files/R Programming_ Quiz1.html" class="link-overlay">
+    <span class="link">View <strong>rprog-quiz1.txt</strong> <span class="octicon octicon-arrow-right"></span></span>
+  </a>
+  <div class="meta clearfix">
+    <div class="info file-name">
+      <span class="icon">
+        <b class="octicon octicon-gist"></b>
+      </span>
+      <a aria-label="Permalink" href="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f#file-rprog-quiz1-txt" class="tooltipped tooltipped-s permalink"><strong class="file-name js-selectable-text">rprog-quiz1.txt</strong></a>
+    </div>
+    <div class="actions">
+      <div class="button-group">
+        <a aria-label="View Raw" href="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f/raw/899340270aac0e6b721ca893e831a507b38f7034/rprog-quiz1.txt" data-skip-pjax="" class="minibutton raw-url js-view-raw">Raw</a>
+      </div>
+    </div>
+  </div>
+  <div class="suppressed">
+    <a class="js-show-suppressed-file">File suppressed. Click to show.</a>
+  </div>
+  <div class="blob-wrapper data type-text js-blob-data">
+    
+
+
+
+    <div class="file-data">
+      <table cellpadding="0" cellspacing="0" class="lines highlight">
+        <tbody><tr>
+          <td class="line-numbers">
+            <span class="line-number" id="file-rprog-quiz1-txt-L1" rel="file-rprog-quiz1-txt-L1">1</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L2" rel="file-rprog-quiz1-txt-L2">2</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L3" rel="file-rprog-quiz1-txt-L3">3</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L4" rel="file-rprog-quiz1-txt-L4">4</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L5" rel="file-rprog-quiz1-txt-L5">5</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L6" rel="file-rprog-quiz1-txt-L6">6</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L7" rel="file-rprog-quiz1-txt-L7">7</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L8" rel="file-rprog-quiz1-txt-L8">8</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L9" rel="file-rprog-quiz1-txt-L9">9</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L10" rel="file-rprog-quiz1-txt-L10">10</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L11" rel="file-rprog-quiz1-txt-L11">11</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L12" rel="file-rprog-quiz1-txt-L12">12</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L13" rel="file-rprog-quiz1-txt-L13">13</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L14" rel="file-rprog-quiz1-txt-L14">14</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L15" rel="file-rprog-quiz1-txt-L15">15</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L16" rel="file-rprog-quiz1-txt-L16">16</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L17" rel="file-rprog-quiz1-txt-L17">17</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L18" rel="file-rprog-quiz1-txt-L18">18</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L19" rel="file-rprog-quiz1-txt-L19">19</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L20" rel="file-rprog-quiz1-txt-L20">20</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L21" rel="file-rprog-quiz1-txt-L21">21</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L22" rel="file-rprog-quiz1-txt-L22">22</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L23" rel="file-rprog-quiz1-txt-L23">23</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L24" rel="file-rprog-quiz1-txt-L24">24</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L25" rel="file-rprog-quiz1-txt-L25">25</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L26" rel="file-rprog-quiz1-txt-L26">26</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L27" rel="file-rprog-quiz1-txt-L27">27</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L28" rel="file-rprog-quiz1-txt-L28">28</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L29" rel="file-rprog-quiz1-txt-L29">29</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L30" rel="file-rprog-quiz1-txt-L30">30</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L31" rel="file-rprog-quiz1-txt-L31">31</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L32" rel="file-rprog-quiz1-txt-L32">32</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L33" rel="file-rprog-quiz1-txt-L33">33</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L34" rel="file-rprog-quiz1-txt-L34">34</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L35" rel="file-rprog-quiz1-txt-L35">35</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L36" rel="file-rprog-quiz1-txt-L36">36</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L37" rel="file-rprog-quiz1-txt-L37">37</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L38" rel="file-rprog-quiz1-txt-L38">38</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L39" rel="file-rprog-quiz1-txt-L39">39</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L40" rel="file-rprog-quiz1-txt-L40">40</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L41" rel="file-rprog-quiz1-txt-L41">41</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L42" rel="file-rprog-quiz1-txt-L42">42</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L43" rel="file-rprog-quiz1-txt-L43">43</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L44" rel="file-rprog-quiz1-txt-L44">44</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L45" rel="file-rprog-quiz1-txt-L45">45</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L46" rel="file-rprog-quiz1-txt-L46">46</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L47" rel="file-rprog-quiz1-txt-L47">47</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L48" rel="file-rprog-quiz1-txt-L48">48</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L49" rel="file-rprog-quiz1-txt-L49">49</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L50" rel="file-rprog-quiz1-txt-L50">50</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L51" rel="file-rprog-quiz1-txt-L51">51</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L52" rel="file-rprog-quiz1-txt-L52">52</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L53" rel="file-rprog-quiz1-txt-L53">53</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L54" rel="file-rprog-quiz1-txt-L54">54</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L55" rel="file-rprog-quiz1-txt-L55">55</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L56" rel="file-rprog-quiz1-txt-L56">56</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L57" rel="file-rprog-quiz1-txt-L57">57</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L58" rel="file-rprog-quiz1-txt-L58">58</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L59" rel="file-rprog-quiz1-txt-L59">59</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L60" rel="file-rprog-quiz1-txt-L60">60</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L61" rel="file-rprog-quiz1-txt-L61">61</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L62" rel="file-rprog-quiz1-txt-L62">62</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L63" rel="file-rprog-quiz1-txt-L63">63</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L64" rel="file-rprog-quiz1-txt-L64">64</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L65" rel="file-rprog-quiz1-txt-L65">65</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L66" rel="file-rprog-quiz1-txt-L66">66</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L67" rel="file-rprog-quiz1-txt-L67">67</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L68" rel="file-rprog-quiz1-txt-L68">68</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L69" rel="file-rprog-quiz1-txt-L69">69</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L70" rel="file-rprog-quiz1-txt-L70">70</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L71" rel="file-rprog-quiz1-txt-L71">71</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L72" rel="file-rprog-quiz1-txt-L72">72</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L73" rel="file-rprog-quiz1-txt-L73">73</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L74" rel="file-rprog-quiz1-txt-L74">74</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L75" rel="file-rprog-quiz1-txt-L75">75</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L76" rel="file-rprog-quiz1-txt-L76">76</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L77" rel="file-rprog-quiz1-txt-L77">77</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L78" rel="file-rprog-quiz1-txt-L78">78</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L79" rel="file-rprog-quiz1-txt-L79">79</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L80" rel="file-rprog-quiz1-txt-L80">80</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L81" rel="file-rprog-quiz1-txt-L81">81</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L82" rel="file-rprog-quiz1-txt-L82">82</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L83" rel="file-rprog-quiz1-txt-L83">83</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L84" rel="file-rprog-quiz1-txt-L84">84</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L85" rel="file-rprog-quiz1-txt-L85">85</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L86" rel="file-rprog-quiz1-txt-L86">86</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L87" rel="file-rprog-quiz1-txt-L87">87</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L88" rel="file-rprog-quiz1-txt-L88">88</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L89" rel="file-rprog-quiz1-txt-L89">89</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L90" rel="file-rprog-quiz1-txt-L90">90</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L91" rel="file-rprog-quiz1-txt-L91">91</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L92" rel="file-rprog-quiz1-txt-L92">92</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L93" rel="file-rprog-quiz1-txt-L93">93</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L94" rel="file-rprog-quiz1-txt-L94">94</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L95" rel="file-rprog-quiz1-txt-L95">95</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L96" rel="file-rprog-quiz1-txt-L96">96</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L97" rel="file-rprog-quiz1-txt-L97">97</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L98" rel="file-rprog-quiz1-txt-L98">98</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L99" rel="file-rprog-quiz1-txt-L99">99</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L100" rel="file-rprog-quiz1-txt-L100">100</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L101" rel="file-rprog-quiz1-txt-L101">101</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L102" rel="file-rprog-quiz1-txt-L102">102</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L103" rel="file-rprog-quiz1-txt-L103">103</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L104" rel="file-rprog-quiz1-txt-L104">104</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L105" rel="file-rprog-quiz1-txt-L105">105</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L106" rel="file-rprog-quiz1-txt-L106">106</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L107" rel="file-rprog-quiz1-txt-L107">107</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L108" rel="file-rprog-quiz1-txt-L108">108</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L109" rel="file-rprog-quiz1-txt-L109">109</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L110" rel="file-rprog-quiz1-txt-L110">110</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L111" rel="file-rprog-quiz1-txt-L111">111</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L112" rel="file-rprog-quiz1-txt-L112">112</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L113" rel="file-rprog-quiz1-txt-L113">113</span>
+            <span class="line-number" id="file-rprog-quiz1-txt-L114" rel="file-rprog-quiz1-txt-L114">114</span>
+          </td>
+          <td class="line-data">
+            <pre class="line-pre"><div class="line" id="file-rprog-quiz1-txt-LC1">1
+</div><div class="line" id="file-rprog-quiz1-txt-LC2">The R language is a dialect of which of the following programming languages?
+</div><div class="line" id="file-rprog-quiz1-txt-LC3">S
+</div><div class="line" id="file-rprog-quiz1-txt-LC4">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC5">2
+</div><div class="line" id="file-rprog-quiz1-txt-LC6">The definition of free software consists of four freedoms (freedoms 0 through 3). Which of the following is NOT one of the freedoms that are part of the definition?
+</div><div class="line" id="file-rprog-quiz1-txt-LC7">The freedom to prevent users from using the software for undesirable purposes.
+</div><div class="line" id="file-rprog-quiz1-txt-LC8">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC9">3
+</div><div class="line" id="file-rprog-quiz1-txt-LC10">In R the following are all atomic data types EXCEPT 
+</div><div class="line" id="file-rprog-quiz1-txt-LC11">data frame
+</div><div class="line" id="file-rprog-quiz1-txt-LC12">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC13">4
+</div><div class="line" id="file-rprog-quiz1-txt-LC14">If I execute the expression x &lt;- 4 in R, what is the class of the object `x' as determined by the `class()' function?
+</div><div class="line" id="file-rprog-quiz1-txt-LC15">numeric
+</div><div class="line" id="file-rprog-quiz1-txt-LC16">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC17">5
+</div><div class="line" id="file-rprog-quiz1-txt-LC18">What is the class of the object defined by x &lt;- c(4, TRUE)?
+</div><div class="line" id="file-rprog-quiz1-txt-LC19">numeric
+</div><div class="line" id="file-rprog-quiz1-txt-LC20">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC21">6
+</div><div class="line" id="file-rprog-quiz1-txt-LC22">If I have two vectors x &lt;- c(1,3, 5) and y &lt;- c(3, 2, 10), what is produced by the expression rbind(x, y)?
+</div><div class="line" id="file-rprog-quiz1-txt-LC23">a matrix with three columns and two rows
+</div><div class="line" id="file-rprog-quiz1-txt-LC24">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC25">7
+</div><div class="line" id="file-rprog-quiz1-txt-LC26">A key property of vectors in R is that
+</div><div class="line" id="file-rprog-quiz1-txt-LC27">elements of a vector all must be of the same class
+</div><div class="line" id="file-rprog-quiz1-txt-LC28">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC29">8
+</div><div class="line" id="file-rprog-quiz1-txt-LC30">Suppose I have a list defined as x &lt;- list(2, "a", "b", TRUE). What does x[[1]] give me?
+</div><div class="line" id="file-rprog-quiz1-txt-LC31">a numeric vector of length 1.
+</div><div class="line" id="file-rprog-quiz1-txt-LC32">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC33">8
+</div><div class="line" id="file-rprog-quiz1-txt-LC34">Suppose I have a list defined as x &lt;- list(2, "a", "b", TRUE). What does x[[2]] give me?
+</div><div class="line" id="file-rprog-quiz1-txt-LC35">a character vector containing the letter "a".
+</div><div class="line" id="file-rprog-quiz1-txt-LC36">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC37">9
+</div><div class="line" id="file-rprog-quiz1-txt-LC38">Suppose I have a vector x &lt;- 1:4 and y &lt;- 2:3. What is produced by the expression x + y?
+</div><div class="line" id="file-rprog-quiz1-txt-LC39">an integer vector with the values 3, 5, 5, 7.
+</div><div class="line" id="file-rprog-quiz1-txt-LC40">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC41">9
+</div><div class="line" id="file-rprog-quiz1-txt-LC42">Suppose I have a vector x &lt;- 1:4 and a vector y &lt;- 2. What is produced by the expression x + y?
+</div><div class="line" id="file-rprog-quiz1-txt-LC43">a numeric vector with elements 3, 4, 5, 6.
+</div><div class="line" id="file-rprog-quiz1-txt-LC44">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC45">10
+</div><div class="line" id="file-rprog-quiz1-txt-LC46">Suppose I have a vector x &lt;- c(3, 5, 1, 10, 12, 6) and I want to set all elements of this vector that are less than 6 to be equal to zero. What R code achieves this?
+</div><div class="line" id="file-rprog-quiz1-txt-LC47">x[x &lt;= 5] &lt;- 0
+</div><div class="line" id="file-rprog-quiz1-txt-LC48">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC49">10
+</div><div class="line" id="file-rprog-quiz1-txt-LC50">Suppose I have a vector x &lt;- c(17, 14, 4, 5, 13, 12, 10) and I want to set all elements of this vector that are greater than 10 to be equal to 4. What R code achieves this?
+</div><div class="line" id="file-rprog-quiz1-txt-LC51">x[x &gt; 10] &lt;- 4
+</div><div class="line" id="file-rprog-quiz1-txt-LC52">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC53">10
+</div><div class="line" id="file-rprog-quiz1-txt-LC54">Suppose I have a vector x &lt;- c(17, 14, 4, 5, 13, 12, 10) and I want to set all elements of this vector that are greater than 10 to be equal to 4. What R code achieves this?
+</div><div class="line" id="file-rprog-quiz1-txt-LC55">x[x &gt;= 11] &lt;- 4
+</div><div class="line" id="file-rprog-quiz1-txt-LC56">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC57">11
+</div><div class="line" id="file-rprog-quiz1-txt-LC58">In the dataset provided for this Quiz, what are the column names of the dataset?
+</div><div class="line" id="file-rprog-quiz1-txt-LC59">names(data)
+</div><div class="line" id="file-rprog-quiz1-txt-LC60">Ozone, Solar.R, Wind, Temp, Month, Day
+</div><div class="line" id="file-rprog-quiz1-txt-LC61">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC62">12
+</div><div class="line" id="file-rprog-quiz1-txt-LC63">Extract the first 2 rows of the data frame and print them to the console. What does the output look like?
+</div><div class="line" id="file-rprog-quiz1-txt-LC64">data[c(1:2),]
+</div><div class="line" id="file-rprog-quiz1-txt-LC65"> Ozone Solar.R Wind Temp Month Day
+</div><div class="line" id="file-rprog-quiz1-txt-LC66">1    41     190  7.4   67     5   1
+</div><div class="line" id="file-rprog-quiz1-txt-LC67">2    36     118  8.0   72     5   2
+</div><div class="line" id="file-rprog-quiz1-txt-LC68">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC69">13
+</div><div class="line" id="file-rprog-quiz1-txt-LC70">How many observations (i.e. rows) are in this data frame?
+</div><div class="line" id="file-rprog-quiz1-txt-LC71">nrow(data)
+</div><div class="line" id="file-rprog-quiz1-txt-LC72">153
+</div><div class="line" id="file-rprog-quiz1-txt-LC73">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC74">14
+</div><div class="line" id="file-rprog-quiz1-txt-LC75">Extract the last 2 rows of the data frame and print them to the console. What does the output look like?
+</div><div class="line" id="file-rprog-quiz1-txt-LC76">data[c(nrow(data)-1, nrow(data)),]
+</div><div class="line" id="file-rprog-quiz1-txt-LC77">   Ozone Solar.R Wind Temp Month Day
+</div><div class="line" id="file-rprog-quiz1-txt-LC78">152    18     131  8.0   76     9  29
+</div><div class="line" id="file-rprog-quiz1-txt-LC79">153    20     223 11.5   68     9  30
+</div><div class="line" id="file-rprog-quiz1-txt-LC80">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC81">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC82">15
+</div><div class="line" id="file-rprog-quiz1-txt-LC83">What is the value of Ozone in the 47th row?
+</div><div class="line" id="file-rprog-quiz1-txt-LC84">data[47,c("Ozone")]
+</div><div class="line" id="file-rprog-quiz1-txt-LC85">21
+</div><div class="line" id="file-rprog-quiz1-txt-LC86">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC87">16
+</div><div class="line" id="file-rprog-quiz1-txt-LC88">How many missing values are in the Ozone column of this data frame?
+</div><div class="line" id="file-rprog-quiz1-txt-LC89">table(factor(is.na(c(data$Ozone))))[2]
+</div><div class="line" id="file-rprog-quiz1-txt-LC90">37
+</div><div class="line" id="file-rprog-quiz1-txt-LC91">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC92">17
+</div><div class="line" id="file-rprog-quiz1-txt-LC93">What is the mean of the Ozone column in this dataset? Exclude missing values (coded as NA) from this calculation.
+</div><div class="line" id="file-rprog-quiz1-txt-LC94">mean(data$Ozone[!is.na(data$Ozone)])
+</div><div class="line" id="file-rprog-quiz1-txt-LC95">42.1
+</div><div class="line" id="file-rprog-quiz1-txt-LC96">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC97">18
+</div><div class="line" id="file-rprog-quiz1-txt-LC98">Extract the subset of rows of the data frame where Ozone values are above 31 and Temp values are above 90. What is the mean of Solar.R in this subset?
+</div><div class="line" id="file-rprog-quiz1-txt-LC99">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC100">good &lt;- complete.cases(data$Ozone, data$Solar.R, data$Temp)
+</div><div class="line" id="file-rprog-quiz1-txt-LC101">mean(data$Solar.R[good &amp; data$Ozone &gt; 31 &amp; data$Temp &gt; 90])
+</div><div class="line" id="file-rprog-quiz1-txt-LC102">212.8
+</div><div class="line" id="file-rprog-quiz1-txt-LC103">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC104">19
+</div><div class="line" id="file-rprog-quiz1-txt-LC105">What is the mean of "Temp" when "Month" is equal to 6? 
+</div><div class="line" id="file-rprog-quiz1-txt-LC106">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC107">good &lt;- complete.cases(data$Month, data$Temp)
+</div><div class="line" id="file-rprog-quiz1-txt-LC108">mean(data$Temp[good &amp; data$Month == 6])
+</div><div class="line" id="file-rprog-quiz1-txt-LC109">79.1
+</div><div class="line" id="file-rprog-quiz1-txt-LC110">&nbsp;
+</div><div class="line" id="file-rprog-quiz1-txt-LC111">20
+</div><div class="line" id="file-rprog-quiz1-txt-LC112">What was the maximum ozone value in the month of May (i.e. Month = 5)?
+</div><div class="line" id="file-rprog-quiz1-txt-LC113">max(data$Ozone[data$Month==5 &amp; !is.na(data$Ozone)])
+</div><div class="line" id="file-rprog-quiz1-txt-LC114">115
+</div></pre>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+
+  </div>
+</div>
+
+
+        <div class="discussion-timeline js-quote-selection-container">
+
+          <div class="js-discussion">
+            
+          </div>
+
+          <div class="discussion-timeline-actions">
+              <div class="timeline-comment-wrapper timeline-new-comment js-comment-container">
+  <a href="https://gist.github.com/nancydemir"><img class="timeline-comment-avatar" src="./R Programming_ Quiz1_files/11915401" width="48" height="48"></a>
+
+  <form accept-charset="UTF-8" action="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f/comments" class="js-new-comment-form js-comment-form" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="lrmkmGhg9UhQmi27QiS4RScXUbYx8qYcbGF+JTJzGYayBf/zMKJEf80eIH975oNKQx6hJJfY1CD1JiRBqB/OYQ=="></div>
+    <div class="timeline-comment">
+      <input type="hidden" name="gist" value="12282604">
+
+      <div id="js-new-comment-form-actions">
+        
+<div class="js-previewable-comment-form previewable-comment-form write-selected" data-preview-url="/preview">
+  <div class="comment-form-head tabnav">
+    <ul class="tabnav-tabs">
+      <li><a href="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f#comment_body_788_write_bucket" class="tabnav-tab write-tab js-write-tab selected" data-skip-pjax="">Write</a></li>
+      <li><a href="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f#comment_body_788_preview_bucket" class="tabnav-tab preview-tab js-preview-tab" data-skip-pjax="">Preview</a></li>
+    </ul>
+    <span class="tabnav-right">
+      <a class="tabnav-widget text tabnav-extras" href="https://help.github.com/articles/github-flavored-markdown" target="_blank">
+        <span class="octicon octicon-markdown"></span>
+        Parsed as Markdown
+      </a>
+      
+<a href="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f#fullscreen_comment_body_788" class="enable-fullscreen js-enable-fullscreen tooltipped-n
+  tabnav-widget text tabnav-extras">
+  <span class="octicon octicon-screen-full"></span>
+  Edit in fullscreen
+</a>
+
+
+    </span>
+  </div>
+
+
+  <div id="comment_body_788_write_bucket" class="write-content js-write-bucket ">
+    <textarea name="comment[body]" tabindex="1" id="comment_body_788" placeholder="Leave a comment" class="comment-form-textarea js-comment-field js-size-to-fit js-quote-selection-target input-with-fullscreen-icon" data-suggester="comment_body_788_suggestions" required=""></textarea>
+
+    
+
+  </div>
+  <div id="comment_body_788_preview_bucket" class="preview-content js-preview-bucket">
+    <div class="comment-body markdown-body  js-comment-body">
+    </div>
+  </div>
+
+
+  <div class="suggester-container">
+    <div class="suggester js-navigation-container" id="comment_body_788_suggestions" data-url="/kfeoktistoff/437988fedff2b41b159f/suggestions">
+    </div>
+  </div>
+</div>
+
+        <div class="form-actions">
+          <button type="submit" class="button primary js-comment-submit" tabindex="2" data-disable-with="" data-disable-invalid="" disabled="">
+            Comment
+          </button>
+        </div>
+      </div>
+    </div>
+</form></div>
+  
+
+          </div>
+        </div><!-- /.discussion-timeline -->
+      </div><!-- /.gist-content -->
+    </div>
+  </div>
+</div><!-- /.container -->
+
+  <div class="context-overlay"></div>
+</div>
+
+    </div>
+    <div class="slow-loading-overlay"></div>
+  </div>
+
+  <div id="ajax-error-message" class="flash flash-error">
+    <div class="container">
+      <span class="octicon octicon-alert"></span>
+      Something went wrong with that request. Please try again.
+      <a href="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f#" class="octicon octicon-x ajax-error-dismiss"></a>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com/">API</a></li>
+      <li><a href="https://github.com/blog">Blog</a></li>
+      <li><a href="https://github.com/about">About</a></li>
+
+    </ul>
+
+    <a href="https://gist.github.com/">
+      <span class="mega-octicon octicon-mark-github" title="GitHub "></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>© 2015 <span title="0.02480s from github-fe102-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy">Privacy</a></li>
+        <li><a href="https://github.com/security">Security</a></li>
+        <li><a href="https://github.com/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+  </footer>
+
+  <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+        <div class="suggester-container">
+            <div class="suggester fullscreen-suggester js-navigation-container" id="fullscreen_suggester" data-url="/kfeoktistoff/437988fedff2b41b159f/suggestions">
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="https://gist.github.com/kfeoktistoff/437988fedff2b41b159f#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w" aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+
+<div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 1px; height: 1px; z-index: 999999999;"><object id="global-zeroclipboard-flash-bridge" name="global-zeroclipboard-flash-bridge" width="100%" height="100%" type="application/x-shockwave-flash" data="https://gist-assets.github.com/assets/zeroclipboard/dist/ZeroClipboard-aeb54c213f0d09883fed5a0947132da9.swf"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="menu" value="false"><param name="wmode" value="transparent"><param name="flashvars" value="trustedOrigins=gist.github.com%2C%2F%2Fgist.github.com%2Chttps%3A%2F%2Fgist.github.com&amp;swfObjectId=global-zeroclipboard-flash-bridge"></object></div></body></html>
